@@ -27,5 +27,5 @@ spec:
     spec:   
       containers:
       - name: nginx
-        image: ayeshacs540/expense:1.0.0
+        image: ayeshacs540/expense:1.0
         
