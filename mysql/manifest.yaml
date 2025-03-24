@@ -7,7 +7,7 @@ metadata:
   labels:
     app: mysql
     tier: mysql
-    purpose: expense
+    project: expense
 spec:
 # modify replicas according to your case
   replicas: 1
@@ -16,16 +16,16 @@ spec:
     matchLabels:
      app: mysql
      tier: mysql
-     purpose: expense
+     project: expense
   # pod template
   template:
     metadata:
       labels:
         app: mysql
         tier: mysql
-        purpose: expense
+        project: expense
     spec:   
       containers:
       - name: nginx
-        image: ayeshacs540/expense:1.0
+        image: ayeshacs540/mysql:1.0.0
         
